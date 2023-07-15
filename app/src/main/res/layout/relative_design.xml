@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.AppCompatEditText
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:hint="enter your name"
+        android:id="@+id/design_menu_item_text"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/design_menu_item_text"
+        android:layout_alignRight="@id/design_menu_item_text"
+        />
+
+</RelativeLayout>

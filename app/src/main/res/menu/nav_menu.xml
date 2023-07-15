@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:title="add note"
+        android:id="@+id/item_addnote"
+        android:icon="@drawable/ic_baseline_add_24"
+        app:iconTint="@color/white"
+        />
+    <item
+        android:title="show"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        app:iconTint="@color/white"
+        />
+    <item
+        android:title="setting"
+        >
+        <menu>
+            <item
+                android:title="settings"
+                android:id="@+id/item_settings"
+                android:icon="@drawable/ic_baseline_settings_24"
+                app:iconTint="@color/white"
+                />
+        </menu>
+
+    </item>
+
+</menu>

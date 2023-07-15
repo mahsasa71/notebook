@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="@dimen/margin_8"
+        android:layout_height="150dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:id="@+id/txt_title"
+                android:layout_margin="@dimen/margin_8"/>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_title"
+            android:layout_margin="@dimen/margin_8"
+            android:id="@+id/txt_description"
+            android:text="description"
+            />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/img_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginEnd="@dimen/margin_16"
+                android:layout_marginBottom="@dimen/margin_16"
+                android:tint="#4CAF50"
+                app:srcCompat="@drawable/ic_baseline_share_24" />
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/img_delet"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_baseline_delete_24"
+                android:tint="@color/ic_launcher_background"
+                android:layout_toStartOf="@id/img_edit"
+                android:layout_alignParentBottom="true"
+                android:layout_margin="@dimen/margin_16"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/ic_baseline_edit_24"
+                    android:id="@+id/img_edit"
+                    android:tint="#3F51B5"
+                    android:layout_toStartOf="@id/img_share"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/margin_16"/>
+
+
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+
